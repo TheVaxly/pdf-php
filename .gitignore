@@ -1,0 +1,51 @@
+# Node and environment settings
+.env
+.env.*
+test_write.php
+
+# Composer vendor directory
+/vendor/
+/composer.lock
+
+# IDE-specific files
+.idea/
+.vscode/
+
+# PHP logs and temporary files
+*.log
+*.cache
+*.tmp
+
+# Generated files
+/generated_pdfs/
+/uploads/
+
+# System files
+.DS_Store
+Thumbs.db
+*.bak
+*.swp
+
+# PHPUnit
+/phpunit.xml
+/phpunit.xml.dist
+/tests/results/
+
+# Cache directories
+/cache/
+/tmp/
+
+# Local development server settings
+Homestead.yaml
+Homestead.json
+
+# Miscellaneous
+*.sql
+*.sql.gz
+*.zip
+*.tar.gz
+
+# Ignore any sensitive files
+private_key.pem
+*.crt
+*.key
