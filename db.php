@@ -1,8 +1,11 @@
 <?php
-$host = "192.168.44.99";
-$username = "marten";  // Teie MySQL kasutajanimi
-$password = 'sussybaka123';      // Teie MySQL parool
-$database = 'joulutervitused';
+use Dotenv\Dotenv;
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+$host = $_ENV["DB_HOST"];
+$username = $_ENV["DB_USERNAME"];
+$password = $_ENV["DB_PASSWORD"];
+$database = $_ENV["DB_DATABASE"];
 
 // Ühenduse loomine
 $conn = new mysqli($host, $username, $password, $database);
